@@ -16,7 +16,7 @@ navLinks.addEventListener("click", (e) =>{
 
 const scrollRevealOption = {
   distance: "50px",
-  duration: "bottom",
+  origin: "bottom",
   duration: 1000
 };
 
@@ -27,7 +27,7 @@ ScrollReveal().reveal(".header_image img", {
 
 ScrollReveal().reveal(".header_content h1", {
   ...scrollRevealOption,
-  origin: "right",
+  delay: 500,
 });
 
 ScrollReveal().reveal(".header_content .section_description", {
@@ -38,4 +38,29 @@ ScrollReveal().reveal(".header_content .section_description", {
 ScrollReveal().reveal(".header_content .header_btn", {
   ...scrollRevealOption,
   delay: 1500,
+});
+
+ScrollReveal().reveal(".explore_image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+
+ScrollReveal().reveal(".explore_content .section_header", {
+  ...scrollRevealOption,
+  dealy: 500,
+});
+
+ScrollReveal().reveal(".explore_content .section_description", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".explore_content .explore_btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+ScrollReveal().reveal(".banner_card", {
+  ...scrollRevealOption,
+  interval: 500,
 });
