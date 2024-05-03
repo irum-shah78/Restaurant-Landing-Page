@@ -344,6 +344,91 @@ nav{
 .chef_list li:nth-child(3) span{
   color: #185adb;
 }
+.client_container{
+  padding-top: 0;
+}
+.client_container :is(.section_header, .section_description){
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+}
+.client_swiper{
+  margin-top: 2rem;
+  max-width: 750px;
+  margin-inline: auto;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  border: 2px solid rgba(252, 127, 9, 0.5);
+  box-shadow: 5px 5px 30px rgba(252, 127, 9, 0.2);
+  border-radius: 3rem;
+}
+.swiper{
+  padding-bottom: 3rem;
+  width: 100%;
+}
+.client_card{
+  text-align: center;
+}
+.client_card p{
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  line-height: 1.75rem;
+}
+.client_card img{
+  margin-bottom: 1rem;
+  max-width: 70px;
+  margin-inline: auto;
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+.client_card h4{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.client_card h5{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--primary-color);
+}
+.footer{
+  background-color: var(--primary-color-light);
+}
+.footer_container{
+  display: grid;
+  gap: 4rem 2rem;
+}
+.footer_logo{
+  margin-bottom: 1rem;
+}
+.footer_col .section_description{
+  text-align: left;
+}
+.footer_col h4{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.footer_links{
+  display: grid;
+  gap: 0.75rem;
+}
+.footer_links a{
+  color: var(--text-light);
+}
+.footer_links a:hover{
+  color: var(--primary-color);
+}
+.footer_bar{
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
 
 @media (width > 540px){
   .special_grid{
@@ -351,6 +436,9 @@ nav{
   }
   .banner_container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_container{
+    grid-template-columns: 3fr 2fr;
   }
 }
 
@@ -443,6 +531,12 @@ nav{
   .chef_list li{
     justify-content: flex-start;
   }
+  .client_swiper{
+    padding: 3rem 2rem;
+  }
+  .footer_container{
+    grid-template-columns: 2fr repeat(3, 1fr);
+  }
 }
 @media (width > 1024px){
   .special_grid{
@@ -454,5 +548,8 @@ nav{
   }
   .banner_container{
     gap: 2rem;
+  }
+  .chef_bg{
+    max-width: 375px;
   }
 }

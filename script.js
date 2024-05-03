@@ -2,16 +2,16 @@ const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
 const menuIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener("click", (e) =>{
+menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
   const isOpen = navLinks.classList.contains("open");
-  menuIcon.setAttribute("class", isOpen ? "fa-solid fa-xmark": "fa-solid fa-bars");
+  menuIcon.setAttribute("class", isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars");
 });
 
-navLinks.addEventListener("click", (e) =>{
-   navLinks.classList.remove("open");
-   menuIcon.setAttribute("class", "fa-solid fa-bars");
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuIcon.setAttribute("class", "fa-solid fa-bars");
 });
 
 const scrollRevealOption = {
@@ -84,4 +84,13 @@ ScrollReveal().reveal(".chef_list li", {
   ...scrollRevealOption,
   delay: 1500,
   interval: 500,
+});
+
+// Swiper
+const swiper = new Swiper(".swiper", {
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });

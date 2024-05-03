@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -200,7 +201,111 @@
     </div>
   </section>
 
+  <section class="section_container client_container" id="client">
+    <h2 class="section_header">What our Customers are Saying</h2>
+    <p class="section_description">
+      Discover firsthand experiences and testimonials from our valued patrons. Explore the feedback and reviews that
+      showcase our commitment to quality, service, and customer satisfaction.
+    </p>
+    <div class="client_swiper">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client_card">
+              <p>
+                FoodMan's culinary expertise never fails to impress! Every dish is a masterpiece, bursting with flavor
+                and freshness.
+              </p>
+              <img src="Assets/client-1.jpg" alt="client-1">
+              <h4>David Lee</h4>
+              <h5>Business Executive</h5>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client_card">
+              <p>
+                I always turn to FoodMan for a quick and delicious meal. Their efficient service and mouthwatering
+                options never disappoint!
+              </p>
+              <img src="Assets/client-2.jpg" alt="client-2">
+              <h4>Emily Johnson</h4>
+              <h5>Food Blogger</h5>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client_card">
+              <p>
+                FoodMan has become my go-to for all my catering needs. Their attention to detail and exceptional
+                customer service make every event a success.
+              </p>
+              <img src="Assets/client-3.jpg" alt="client-3">
+              <h4>Michael Thompson</h4>
+              <h5>Event Planner</h5>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="section_container footer_container">
+      <div class="footer_col">
+        <div class="logo footer_logo">
+          <a href="#">Food <span>man</span></a>
+        </div>
+        <p class="section_description">
+          Embark on a gastronomic journey with FoodMan, where every bite tells a story and every dish is crafted to
+          perfection.
+        </p>
+      </div>
+      <div class="footer_col">
+        <h4>Product</h4>
+        <ul class="footer_links">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Meal Deals</a></li>
+          <li><a href="#">Catering Options</a></li>
+          <li><a href="#">Seasonal Offerings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_col">
+        <h4>Information</h4>
+        <ul class="footer_links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Meal Deals</a></li>
+          <li><a href="#">Nutrition Information</a></li>
+          <li><a href="#">Allergen Information</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_col">
+        <h4>Company</h4>
+        <ul class="footer_links">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">Terms of Services</a></li>
+          <li><a href="#">Catering Options</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bar">
+      Copyright © 2024 <span style="color:#fc7f09;">Irum Shahzadi</span>. All rights reserved.
+    </div>
+  </footer>
+
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
